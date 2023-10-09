@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Joke_Told_Validation</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+    IsConverted,
+    NOT( Joke_Told__c )
+)</errorConditionFormula>
+    <errorMessage>Please tell a joke before converting lead!</errorMessage>
+</ValidationRule>
