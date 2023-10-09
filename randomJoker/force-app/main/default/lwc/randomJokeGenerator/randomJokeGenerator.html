@@ -1,0 +1,13 @@
+<template>
+    <lightning-card >
+        
+        <div class="slds-p-around_medium">
+            <p>Joke Setup: {jokeSetup}</p>
+            <p>Joke Punchline: {punchline}</p>
+        </div>
+        <div class="slds-p-around_medium">
+            <lightning-button label="Joke Told" onclick={updateLeadRecord}></lightning-button>
+            <lightning-button label="Next Joke" onclick={getJoke}></lightning-button>
+        </div>
+    </lightning-card>
+</template>
